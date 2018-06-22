@@ -8,6 +8,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise" rel="stylesheet">
+	
   <style>
    /*
 Fade content bs-carousel with hero headers
@@ -20,18 +22,20 @@ Image credits: unsplash.com
 /********************************/
 .fade-carousel {
     position: relative;
-    height: 75vh;
+    height: 60vh;
 }
 .fade-carousel .carousel-inner .item {
-    height: 75vh;
+    height: 60vh;
 }
 .fade-carousel .carousel-indicators > li {
+	display: none;
     margin: 0 2px;
     background-color: #FECB6E;
     border-color: #FECB6E;
     opacity: .7;
 }
 .fade-carousel .carousel-indicators > li.active {
+display: none;
   width: 10px;
   height: 10px;
   opacity: 1;
@@ -56,11 +60,14 @@ Image credits: unsplash.com
               transform: translate3d(-50%,-50%,0);
 }
 .hero h1 {
-    font-size: 6em;    
+    font-size: 5em;    
     font-weight: bold;
     margin: 0;
     padding: 0;
 }
+	  .hero h3 {
+		  font-size: 1em;
+	  }
 
 .fade-carousel .carousel-inner .item .hero {
     opacity: 0;
@@ -82,6 +89,7 @@ Image credits: unsplash.com
 /********************************/
 /*            Overlay           */
 /********************************/
+/*
 .overlay {
     position: absolute;
     width: 100%;
@@ -90,6 +98,7 @@ Image credits: unsplash.com
     background-color: #9C6933;
     opacity: .5;
 }
+*/
 
 /********************************/
 /*          Custom Buttons      */
@@ -111,10 +120,12 @@ Image credits: unsplash.com
 .fade-carousel .slides .slide-1, 
 .fade-carousel .slides .slide-2,
 .fade-carousel .slides .slide-3 {
-  height:100vh;
+  height:60vh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+-webkit-filter: sepia(100%);
+	filter: sepia(100%);
 }
 .fade-carousel .slides .slide-1 {
   background-image: url(file:///Users/matthewstockmal/Downloads/HinsdaleTimeMachine.049%20copy.jpeg); 
@@ -190,6 +201,17 @@ transform:none;
 		  margin-bottom: 2em;
 		  
 	  }
+	  .cursive {
+		  font-family: 'Monsieur La Doulaise', cursive;
+		  color: #5C2432;
+		  text-transform: none;
+		  font-size: 2.5em;  
+		  text-shadow: -6px 5px 2px rgba(255, 255, 255, 0.48);
+	  }
+	  .inBetween {
+		  font-size: 1.5em;
+		  
+	  }
 
   </style>
 </head>
@@ -215,7 +237,7 @@ transform:none;
       <div class="slide-1"></div>
       <div class="hero">
         <hgroup>
-            <h1>We Protect</h1>        
+            <h1><span class="cursive">Protect</span></h1>        
             <h3>Through historic landmarking, districting, and review</h3>
         </hgroup>
         <button class="btn btn-hero btn-lg" role="button">Learn More</button>
@@ -225,7 +247,7 @@ transform:none;
       <div class="slide-2"></div>
       <div class="hero">        
         <hgroup>
-            <h1>We Educate</h1>        
+            <h1><span class="cursive">Educate</span></h1>        
             <h3>Learn about village history, architects, and landmarks</h3>
         </hgroup>       
         <button class="btn btn-hero btn-lg" role="button">Learn More</button>
@@ -235,7 +257,7 @@ transform:none;
       <div class="slide-3"></div>
       <div class="hero">        
         <hgroup>
-            <h1>We Benefit</h1>        
+            <h1><span class="cursive">Benefit</span></h1>        
             <h3>Through guides to tax freezes and other resources</h3>
         </hgroup>
         <button class="btn btn-hero btn-lg" role="button">Learn More</button>
@@ -246,7 +268,7 @@ transform:none;
 
   
 <div class="container text-center">    
-  <h3 style="font-size: 3em; font-weight: bold;">Protect</h3><br>
+  <h3 style="font-size: 3em; font-weight: bold;"><span class="cursive inBetween">Protect</span></h3><br>
   <div class="row">
     <div class="col-sm-4">
       <img src="file:///Users/matthewstockmal/Downloads/HinsdaleTimeMachine.049%20copy.jpeg" class="img-responsive" style="width:100%" alt="Image">
