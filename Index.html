@@ -1,299 +1,345 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise" rel="stylesheet">
-	
-  <style>
-   /*
-Fade content bs-carousel with hero headers
-Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
-Image credits: unsplash.com
-*/
+	<head>
+		<title>Bootstrap Example</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise" rel="stylesheet">
 
-/********************************/
-/*       Fade Bs-carousel       */
-/********************************/
-.fade-carousel {
-    position: relative;
-    height: 60vh;
-}
-.fade-carousel .carousel-inner .item {
-    height: 60vh;
-}
-.fade-carousel .carousel-indicators > li {
-	display: none;
-    margin: 0 2px;
-    background-color: #FECB6E;
-    border-color: #FECB6E;
-    opacity: .7;
-}
-.fade-carousel .carousel-indicators > li.active {
-display: none;
-  width: 10px;
-  height: 10px;
-  opacity: 1;
-}
+		<style>
+			/*
+			Fade content bs-carousel with hero headers
+			Code snippet by maridlcrmn (Follow me on Twitter @maridlcrmn) for Bootsnipp.com
+			Image credits: unsplash.com
+			*/
 
-/********************************/
-/*          Hero Headers        */
-/********************************/
-.hero {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 3;
-    color: #fff;
-    text-align: center;
-    text-transform: uppercase;
-    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
-      -webkit-transform: translate3d(-50%,-50%,0);
-         -moz-transform: translate3d(-50%,-50%,0);
-          -ms-transform: translate3d(-50%,-50%,0);
-           -o-transform: translate3d(-50%,-50%,0);
-              transform: translate3d(-50%,-50%,0);
-}
-.hero h1 {
-    font-size: 5em;    
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-}
-	  .hero h3 {
-		  font-size: 1em;
-	  }
+			/********************************/
+			/*       Fade Bs-carousel       */
+			/********************************/
+			.fade-carousel {
+				position: relative;
+				height: 60vh;
+			}
+			.fade-carousel .carousel-inner .item {
+				height: 60vh;
+			}
+			.fade-carousel .carousel-indicators > li {
+				display: none;
+				margin: 0 2px;
+				background-color: #FECB6E;
+				border-color: #FECB6E;
+				opacity: .7;
+			}
+			.fade-carousel .carousel-indicators > li.active {
+				display: none;
+				width: 10px;
+				height: 10px;
+				opacity: 1;
+			}
 
-.fade-carousel .carousel-inner .item .hero {
-    opacity: 0;
-    -webkit-transition: 2s all ease-in-out .1s;
-       -moz-transition: 2s all ease-in-out .1s; 
-        -ms-transition: 2s all ease-in-out .1s; 
-         -o-transition: 2s all ease-in-out .1s; 
-            transition: 2s all ease-in-out .1s; 
-}
-.fade-carousel .carousel-inner .item.active .hero {
-    opacity: 1;
-    -webkit-transition: 2s all ease-in-out .1s;
-       -moz-transition: 2s all ease-in-out .1s; 
-        -ms-transition: 2s all ease-in-out .1s; 
-         -o-transition: 2s all ease-in-out .1s; 
-            transition: 2s all ease-in-out .1s;    
-}
+			/********************************/
+			/*          Hero Headers        */
+			/********************************/
+			.hero {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				z-index: 3;
+				color: #fff;
+				text-align: center;
+				text-transform: uppercase;
+				text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+				-webkit-transform: translate3d(-50%,-50%,0);
+				-moz-transform: translate3d(-50%,-50%,0);
+				-ms-transform: translate3d(-50%,-50%,0);
+				-o-transform: translate3d(-50%,-50%,0);
+				transform: translate3d(-50%,-50%,0);
+			}
+			.hero h1 {
+				font-size: 5em;    
+				font-weight: bold;
+				margin: 0;
+				padding: 0;
+			}
+			.hero h3 {
+				font-size: 1em;
+			}
 
-/********************************/
-/*            Overlay           */
-/********************************/
-/*
-.overlay {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    background-color: #9C6933;
-    opacity: .5;
-}
-*/
+			.fade-carousel .carousel-inner .item .hero {
+				opacity: 0;
+				-webkit-transition: 2s all ease-in-out .1s;
+				-moz-transition: 2s all ease-in-out .1s; 
+				-ms-transition: 2s all ease-in-out .1s; 
+				-o-transition: 2s all ease-in-out .1s; 
+				transition: 2s all ease-in-out .1s; 
+			}
+			.fade-carousel .carousel-inner .item.active .hero {
+				opacity: 1;
+				-webkit-transition: 2s all ease-in-out .1s;
+				-moz-transition: 2s all ease-in-out .1s; 
+				-ms-transition: 2s all ease-in-out .1s; 
+				-o-transition: 2s all ease-in-out .1s; 
+				transition: 2s all ease-in-out .1s;    
+			}
 
-/********************************/
-/*          Custom Buttons      */
-/********************************/
-.btn.btn-lg {padding: 10px 40px;}
-.btn.btn-hero,
-.btn.btn-hero:hover,
-.btn.btn-hero:focus {
-    color: #FAF5EB;
-    background-color: #5C2432;
-    border-color: #5C2432;
-    outline: none;
-    margin: 20px auto;
-}
+			/********************************/
+			/*            Overlay           */
+			/********************************/
+			/*
+			.overlay {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			z-index: 2;
+			background-color: #9C6933;
+			opacity: .5;
+			}
+			*/
 
-/********************************/
-/*       Slides backgrounds     */
-/********************************/
-.fade-carousel .slides .slide-1, 
-.fade-carousel .slides .slide-2,
-.fade-carousel .slides .slide-3 {
-  height:60vh;
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
--webkit-filter: sepia(100%);
-	filter: sepia(100%);
-}
-.fade-carousel .slides .slide-1 {
-  background-image: url(images/HinsdaleTimeMachine.049%20copy.jpeg); 
-}
-.fade-carousel .slides .slide-2 {
-  background-image: url(images/304SLincoln12.jpg);
-}
-.fade-carousel .slides .slide-3 {
-  background-image: url(images/4WashingtonCircle.jpg);
-}
+			/********************************/
+			/*          Custom Buttons      */
+			/********************************/
+			.btn.btn-lg {padding: 10px 40px;}
+			.btn.btn-hero,
+			.btn.btn-hero:hover,
+			.btn.btn-hero:focus {
+				color: #FAF5EB;
+				background-color: #5C2432;
+				border-color: #5C2432;
+				outline: none;
+				margin: 20px auto;
+			}
 
-/********************************/
-/*          Media Queries       */
-/********************************/
+			/********************************/
+			/*       Slides backgrounds     */
+			/********************************/
+			.fade-carousel .slides .slide-1, 
+			.fade-carousel .slides .slide-2,
+			.fade-carousel .slides .slide-3 {
+				height:60vh;
+				background-size: cover;
+				background-position: center center;
+				background-repeat: no-repeat;
+				-webkit-filter: sepia(100%);
+				filter: sepia(100%);
+			}
+			.fade-carousel .slides .slide-1 {
+				background-image: url(images/HinsdaleTimeMachine.049%20copy.jpeg); 
+			}
+			.fade-carousel .slides .slide-2 {
+				background-image: url(images/304SLincoln12.jpg);
+			}
+			.fade-carousel .slides .slide-3 {
+				background-image: url(images/4WashingtonCircle.jpg);
+			}
 
-@media screen and (min-width: 980px){
-    .hero { width: 980px; }    
-}
-@media screen and (max-width: 640px){
-    .hero h1 { font-size: 4em; }    
-} 
-@media all and (transform-3d),(-webkit-transform-3d) {
+			/********************************/
+			/*          Media Queries       */
+			/********************************/
 
-.carousel-inner>.item {
+			@media screen and (min-width: 980px){
+				.hero { width: 980px; }    
+			}
+			@media screen and (max-width: 640px){
+				.hero h1 { font-size: 4em; }    
+			} 
+			@media all and (transform-3d),(-webkit-transform-3d) {
 
--webkit-perspective:none;
+				.carousel-inner>.item {
 
-perspective:none;
+					-webkit-perspective:none;
 
-}
+					perspective:none;
 
-.carousel-inner>.item.active,
+				}
 
-.carousel-inner>.item.next.left,
+				.carousel-inner>.item.active,
 
-.carousel-inner>.item.prev.right {
+				.carousel-inner>.item.next.left,
 
-left:0;
+				.carousel-inner>.item.prev.right {
 
--webkit-transform:none;
+					left:0;
 
-transform:none;
+					-webkit-transform:none;
 
-}
+					transform:none;
 
-}
-/* Centered text */
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-	font-size: 2em;
-	color: #FFFFFF;
-    font-weight: bold;
-	text-shadow: 1px 1px 0 rgba(0,0,0,.75);
-      -webkit-transform: translate3d(-50%,-50%,0);
-         -moz-transform: translate3d(-50%,-50%,0);
-          -ms-transform: translate3d(-50%,-50%,0);
-           -o-transform: translate3d(-50%,-50%,0);
-              transform: translate3d(-50%,-50%,0);
-}
-.col-sm-4 img {
-	-webkit-filter: sepia(100%);
-	filter: sepia(100%);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-	
-}
-	  
-.col-sm-4:hover img {
-	-webkit-filter: sepia(0);
-	filter: sepia(0);
-}
-	  .col-sm-4 {
-		  margin-bottom: 2em;
-		  
-	  }
-	  .cursive {
-		  font-family: 'Monsieur La Doulaise', cursive;
-		  color: #5C2432;
-		  text-transform: none;
-		  font-size: 2.5em;  
-		  text-shadow: -6px 5px 2px rgba(255, 255, 255, 0.48);
-	  }
-	  .inBetween {
-		  font-size: 1.5em;
-		  
-	  }
+				}
 
+			}
+			/* Centered text */
+			.centered {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				font-size: 2em;
+				color: #FFFFFF;
+				font-weight: bold;
+				text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+				-webkit-transform: translate3d(-50%,-50%,0);
+				-moz-transform: translate3d(-50%,-50%,0);
+				-ms-transform: translate3d(-50%,-50%,0);
+				-o-transform: translate3d(-50%,-50%,0);
+				transform: translate3d(-50%,-50%,0);
+			}
+			.col-sm-4 img {
+				-webkit-filter: sepia(100%);
+				filter: sepia(100%);
+				-webkit-transition: .3s ease-in-out;
+				transition: .3s ease-in-out;
 
-  </style>
-</head>
-<body>
+			}
 
-<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
-  <!-- Overlay -->
-		
-<div class="overlay"></div>
-  
+			.col-sm-4:hover img {
+				-webkit-filter: sepia(0);
+				filter: sepia(0);
+			}
+			.col-sm-4 {
+				margin-bottom: 2em;
 
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
-    <li data-target="#bs-carousel" data-slide-to="1"></li>
-    <li data-target="#bs-carousel" data-slide-to="2"></li>
-  </ol>
-  
+			}
+			.cursive {
+				font-family: 'Monsieur La Doulaise', cursive;
+				color: #5C2432;
+				text-transform: none;
+				font-size: 2.5em;  
+				text-shadow: -6px 5px 2px rgba(255, 255, 255, 0.48);
+			}
+			.inBetween {
+				font-size: 1.5em;
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item slides active">
-      <div class="slide-1"></div>
-      <div class="hero">
-        <hgroup>
-            <h1><span class="cursive">Protect</span></h1>        
-            <h3>Through historic landmarking, districting, and review</h3>
-        </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">Learn More</button>
-      </div>
-    </div>
-    <div class="item slides">
-      <div class="slide-2"></div>
-      <div class="hero">        
-        <hgroup>
-            <h1><span class="cursive">Educate</span></h1>        
-            <h3>Learn about village history, architects, and landmarks</h3>
-        </hgroup>       
-        <button class="btn btn-hero btn-lg" role="button">Learn More</button>
-      </div>
-    </div>
-    <div class="item slides">
-      <div class="slide-3"></div>
-      <div class="hero">        
-        <hgroup>
-            <h1><span class="cursive">Benefit</span></h1>        
-            <h3>Through guides to tax freezes and other resources</h3>
-        </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">Learn More</button>
-      </div>
-    </div>
-  </div> 
-</div>
-
-  
-<div class="container text-center">    
-  <h3 style="font-size: 3em; font-weight: bold;"><span class="cursive inBetween">Protect</span></h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="images/HinsdaleTimeMachine.049%20copy.jpeg" class="img-responsive" style="width:100%" alt="Image">
-      <div class="centered">Certificate of Appropriateness</div>
-    </div>
-   <div class="col-sm-4">
-      <img src="images/304SLincoln12.jpg" class="img-responsive" style="width:100%" alt="Image">
-      <div class="centered">Landmarking</div>
-    </div>
-    <div class="col-sm-4">
-      <img src="images/4WashingtonCircle.jpg" class="img-responsive" style="width:100%" alt="Image">
-      <div class="centered">Historic Districts</div>
-    </div>
-  </div>
-</div><br>
-
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-</footer>
+			}
 
 
+		</style>
+	</head>
+	<body>
 
-</body>
+		<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
+			<!-- Overlay -->
+
+			<div class="overlay"></div>
+
+
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+				<li data-target="#bs-carousel" data-slide-to="1"></li>
+				<li data-target="#bs-carousel" data-slide-to="2"></li>
+			</ol>
+
+
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item slides active">
+					<div class="slide-1"></div>
+					<div class="hero">
+						<hgroup>
+							<h1><span class="cursive">Protect</span></h1>        
+							<h3>Through historic landmarking, districting, and review</h3>
+						</hgroup>
+						<button class="btn btn-hero btn-lg" role="button">Learn More</button>
+					</div>
+				</div>
+				<div class="item slides">
+					<div class="slide-2"></div>
+					<div class="hero">        
+						<hgroup>
+							<h1><span class="cursive">Educate</span></h1>        
+							<h3>Learn about village history, architects, and landmarks</h3>
+						</hgroup>       
+						<button class="btn btn-hero btn-lg" role="button">Learn More</button>
+					</div>
+				</div>
+				<div class="item slides">
+					<div class="slide-3"></div>
+					<div class="hero">        
+						<hgroup>
+							<h1><span class="cursive">Benefit</span></h1>        
+							<h3>Through guides to tax freezes and other resources</h3>
+						</hgroup>
+						<button class="btn btn-hero btn-lg" role="button">Learn More</button>
+					</div>
+				</div>
+			</div> 
+		</div>
+
+
+		<div class="container text-center">    
+			<h3 style="font-size: 3em; font-weight: bold;"><span class="cursive inBetween">Protect</span></h3><br>
+			<div class="row">
+				<a href="http://cms4.revize.com/revize/hinsdale/document_center/HistoricPreservation/Application_for_Certificate_of_Appropriateness.pdf">
+					<div class="col-sm-4">
+						<img src="images/HinsdaleTimeMachine.049%20copy.jpeg" class="img-responsive" style="width:100%" alt="Image">
+						<div class="centered">Certificate of Appropriateness</div>
+					</div>
+				</a>
+				<a href="http://www.villageofhinsdale.org/residents/village_history/view_designated_landmarks_(text).php">
+					<div class="col-sm-4">
+						<img src="images/304SLincoln12.jpg" class="img-responsive" style="width:100%" alt="304 S Lincoln">
+						<div class="centered">Landmarking</div>
+					</div>
+				</a>
+				<a href="http://cms4.revize.com/revize/hinsdale/document_center/Residents/National_Register_Historic_District_Information_Packet.pdf">
+					<div class="col-sm-4">
+						<img src="images/4WashingtonCircle.jpg" class="img-responsive" style="width:100%" alt="4 Washington Circle">
+						<div class="centered">Historic Districts</div>
+					</div></a>
+
+			</div>
+			
+			<h3 style="font-size: 3em; font-weight: bold;"><span class="cursive inBetween">Educate</span></h3><br>
+			<div class="row">
+				<a href="http://www.villageofhinsdale.org/residents/village_history/index.php">
+					<div class="col-sm-4">
+						<img src="images/120SElm.jpg" class="img-responsive" style="width:100%" alt="Image">
+						<div class="centered">Village History</div>
+					</div>
+				</a>
+				<a href="http://www.villageofhinsdale.org/residents/village_history/learning_about_the_local_architects.php">
+					<div class="col-sm-4">
+						<img src="images/134SPark.jpg" class="img-responsive" style="width:100%" alt="304 S Lincoln">
+						<div class="centered">Local Architects</div>
+					</div>
+				</a>
+				<a href="http://www.villageofhinsdale.org/residents/village_history/view_designated_landmarks_(text).php">
+					<div class="col-sm-4">
+						<img src="images/806Wilson.jpg" class="img-responsive" style="width:100%" alt="4 Washington Circle">
+						<div class="centered">Local Landmarks</div>
+					</div></a>
+
+			</div>
+			
+			<h3 style="font-size: 3em; font-weight: bold;"><span class="cursive inBetween">Benefit</span></h3><br>
+			<div class="row align-items-center">
+				<a href="http://www.villageofhinsdale.org/residents/village_history/state_of_illinois_tax_incentives.php">
+					<div class="col-sm-offset-2 col-sm-4">
+						<img src="images/120SElm.jpg" class="img-responsive" style="width:100%" alt="Image">
+						<div class="centered">Tax Freeze</div>
+					</div>
+				</a>
+				<a href="http://www.villageofhinsdale.org/residents/village_history/view_designated_landmarks_(images).php">
+					<div class="col-sm-4">
+						<img src="images/134SPark.jpg" class="img-responsive" style="width:100%" alt="304 S Lincoln">
+						<div class="centered">Plaque Program</div>
+					</div>
+				</a>
+				
+
+			</div>
+		</div><br>
+
+		<footer class="container-fluid text-center">
+			<p>Footer Text</p>
+		</footer>
+
+
+
+	</body>
 </html>
