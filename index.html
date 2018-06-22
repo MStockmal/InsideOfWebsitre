@@ -152,8 +152,14 @@
 			@media screen and (min-width: 980px){
 				.hero { width: 980px; }    
 			}
+			@media min-width: 780px{
+				   .centered {
+					font-size: 8em;
+				}
+			}
 			@media screen and (max-width: 640px){
-				.hero h1 { font-size: 4em; }    
+				.hero h1 { font-size: 4em; } 
+				
 			} 
 			@media all and (transform-3d),(-webkit-transform-3d) {
 
@@ -186,10 +192,10 @@
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
-				font-size: 2em;
+				font-size: 2.5em;
 				color: #FFFFFF;
 				font-weight: bold;
-				text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+				text-shadow: 2px 2px 0 rgba(0,0,0,.75);
 				-webkit-transform: translate3d(-50%,-50%,0);
 				-moz-transform: translate3d(-50%,-50%,0);
 				-ms-transform: translate3d(-50%,-50%,0);
@@ -285,7 +291,7 @@
 				<a href="http://cms4.revize.com/revize/hinsdale/document_center/HistoricPreservation/Application_for_Certificate_of_Appropriateness.pdf">
 					<div class="col-sm-4">
 						<img src="images/HinsdaleTimeMachine.049%20copy.jpeg" class="img-responsive" style="width:100%" alt="Image">
-						<div class="centered">Certificate of Appropriateness</div>
+						<div class="centered" style="font-size: 2em;">Certificate of Appropriateness</div>
 					</div>
 				</a>
 				<a href="http://www.villageofhinsdale.org/residents/village_history/view_designated_landmarks_(text).php">
@@ -333,21 +339,13 @@
 					</div>
 				</a>
 				<a href="http://www.villageofhinsdale.org/residents/village_history/view_designated_landmarks_(images).php">
-					<div class="col-sm-4">
+					<div class="col-sm-4" style="margin-bottom: 0px;">
 						<img src="images/134SPark.jpg" class="img-responsive" style="width:100%" alt="304 S Lincoln">
 						<div class="centered">Plaque Program</div>
 					</div>
 				</a>
 				
-
 			</div>
 		</div><br>
-
-		<footer class="container-fluid text-center">
-			<p>Footer Text</p>
-		</footer>
-
-
-
 	</body>
 </html>
